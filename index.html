@@ -11,23 +11,25 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --pu:#2563eb;--pu-dark:#1d4ed8;--pu-light:#eff6ff;--pu-mid:#3b82f6;
-  --bg:#f8fafc;--surface:#fff;--surface-alt:#f8fafc;--border:#e2e8f0;
-  --border-soft:#f1f5f9;--border-mid:#e2e8f0;--border-avatar:#bfdbfe;
-  --text:#0f172a;--text-muted:#64748b;--text-faint:#94a3b8;--text-nav:#475569;
-  --toast-bg:#0f172a;--vote-now-bg:#0f172a;--vote-now-hover:#1e293b;
-  --input-bg:#fff;--bar-bg:#f1f5f9;--stat-bg:#f8fafc;--cat-body-bg:#f8fafc;
-  --closed-bg:#fef3c7;--closed-color:#92400e;--winner-bg:#eff6ff;--winner-color:#1e40af;
+  /* OWAMBE ROYAL GOLD THEME (LIGHT MODE) */
+  --pu:#B8860B;--pu-dark:#8B6508;--pu-light:#FDF8E7;--pu-mid:#DAA520;
+  --bg:#FCFAF5;--surface:#fff;--surface-alt:#FCFAF5;--border:#EAE0C8;
+  --border-soft:#F4EFE1;--border-mid:#EAE0C8;--border-avatar:#D4C5A0;
+  --text:#1A110A;--text-muted:#7A6B56;--text-faint:#A69986;--text-nav:#4A3F32;
+  --toast-bg:#1A110A;--vote-now-bg:#1A110A;--vote-now-hover:#2A1F13;
+  --input-bg:#fff;--bar-bg:#F4EFE1;--stat-bg:#FCFAF5;--cat-body-bg:#FCFAF5;
+  --closed-bg:#FDF0D5;--closed-color:#855A00;--winner-bg:#FDF8E7;--winner-color:#8B6508;
 }
 @media(prefers-color-scheme:dark){
+  /* OWAMBE ROYAL GOLD THEME (DARK MODE) */
   :root{
-    --bg:#040414;--surface:#0b0b24;--surface-alt:#07071a;--border:#1e1e40;
-    --border-soft:#151530;--border-mid:#1e1e40;--border-avatar:#2a2a5a;
-    --text:#f1f5f9;--text-muted:#94a3b8;--text-faint:#64748b;--text-nav:#cbd5e1;
-    --toast-bg:#1e1e40;--vote-now-bg:#2563eb;--vote-now-hover:#1d4ed8;
-    --input-bg:#0b0b24;--bar-bg:#151530;--stat-bg:#07071a;--cat-body-bg:#07071a;
-    --pu-light:#151530;--closed-bg:#451a03;--closed-color:#fcd34d;
-    --winner-bg:#151530;--winner-color:#93c5fd;
+    --bg:#0A0704;--surface:#140E08;--surface-alt:#0F0A06;--border:#2A1F13;
+    --border-soft:#1E150C;--border-mid:#2A1F13;--border-avatar:#3D2D1B;
+    --text:#FDF8E7;--text-muted:#A69986;--text-faint:#7A6B56;--text-nav:#CFC4B1;
+    --toast-bg:#2A1F13;--vote-now-bg:#D4AF37;--vote-now-hover:#B8860B;
+    --input-bg:#140E08;--bar-bg:#1E150C;--stat-bg:#0F0A06;--cat-body-bg:#0F0A06;
+    --pu-light:#2A1F13;--closed-bg:#3A2708;--closed-color:#FADA5E;
+    --winner-bg:#2A1F13;--winner-color:#FDF8E7;
   }
 }
 body{font-family:'Inter',sans-serif;background:var(--bg);min-height:100vh;display:flex;flex-direction:column;color:var(--text)}
@@ -135,7 +137,7 @@ nav{background:var(--surface);border-bottom:1.5px solid var(--border);padding:0 
 /* ADMIN LOGIN */
 .login-wrap{min-height:calc(100vh - 100px);display:flex;align-items:center;justify-content:center;padding:24px 16px}
 .login-split{display:grid;grid-template-columns:1fr 1fr;max-width:740px;width:100%;border-radius:18px;overflow:hidden;border:1.5px solid var(--border)}
-.login-left{background:linear-gradient(135deg,#000000,#10103a);padding:40px 32px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.login-left{background:linear-gradient(135deg,#0A0704,#1E150C);padding:40px 32px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
 .login-left-logo{display:flex;align-items:center;gap:8px;margin-bottom:20px}
 .lmark{width:32px;height:32px;background:var(--pu);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;flex-shrink:0}
 .login-left-logo span{font-size:12px;font-weight:700;color:#fff}
@@ -214,20 +216,20 @@ nav{background:var(--surface);border-bottom:1.5px solid var(--border);padding:0 
 .export-row{display:flex;gap:7px;flex-wrap:wrap}
 
 /* FOOTER */
-footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
+footer{background:#0A0704;color:#CFC4B1;padding:32px 20px 20px;margin-top:auto}
 .footer-inner{max-width:1100px;margin:0 auto}
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;margin-bottom:24px}
 .footer-brand .logo-mark-f{width:32px;height:32px;background:var(--pu);border-radius:8px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;margin-bottom:8px}
 .footer-brand h3{font-size:14px;font-weight:700;color:#fff;margin-bottom:6px}
-.footer-brand p{font-size:11px;line-height:1.7;color:#94a3b8;max-width:220px}
+.footer-brand p{font-size:11px;line-height:1.7;color:#A69986;max-width:220px}
 .footer-col h4{font-size:11px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px}
-.footer-col a{display:block;font-size:12px;color:#94a3b8;text-decoration:none;margin-bottom:6px;cursor:pointer;transition:color 0.15s}
+.footer-col a{display:block;font-size:12px;color:#A69986;text-decoration:none;margin-bottom:6px;cursor:pointer;transition:color 0.15s}
 .footer-col a:hover{color:#fff}
-.footer-bottom{border-top:1px solid #1e1e40;padding-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
-.footer-copy{font-size:11px;color:#64748b}
-.footer-credit{font-size:11px;color:#64748b}
-.footer-credit a{color:#94a3b8;text-decoration:none}
-.footer-credit a:hover{color:#f1f5f9}
+.footer-bottom{border-top:1px solid #2A1F13;padding-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.footer-copy{font-size:11px;color:#7A6B56}
+.footer-credit{font-size:11px;color:#7A6B56}
+.footer-credit a{color:#A69986;text-decoration:none}
+.footer-credit a:hover{color:#FDF8E7}
 
 /* RESPONSIVE */
 @media(max-width:580px){
@@ -296,16 +298,17 @@ footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
   </div>
 </nav>
 
+<!-- HOME -->
 <div class="page" id="page-home">
-  <div style="background:linear-gradient(135deg,#000000 0%,#080820 50%,#10103a 100%);min-height:70vh;display:flex;align-items:center;padding:60px 40px;margin:-20px -16px 0;overflow:hidden">
+  <div style="background:linear-gradient(135deg,#0A0704 0%,#140E08 50%,#2A1F13 100%);min-height:70vh;display:flex;align-items:center;padding:60px 40px;margin:-20px -16px 0;overflow:hidden">
     <div style="max-width:1100px;margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap">
       <div style="flex:1;display:flex;align-items:center;justify-content:center;min-width:200px">
-        <img src="https://i.imgur.com/fZsGE4F.jpeg" alt="Mavericks Logo" style="width:clamp(150px,30vw,320px);height:clamp(150px,30vw,320px);object-fit:contain;filter:drop-shadow(0 8px 40px rgba(37,99,235,0.4))" />
+        <img src="https://i.imgur.com/fZsGE4F.jpeg" alt="Mavericks Logo" style="width:clamp(150px,30vw,320px);height:clamp(150px,30vw,320px);object-fit:contain;filter:drop-shadow(0 8px 40px rgba(212,175,55,0.4))" />
       </div>
       <div style="flex:2;min-width:240px">
         <h1 style="font-size:clamp(24px,5vw,48px);font-weight:800;color:#fff;line-height:1.2;margin-bottom:16px">Vote with confidence.</h1>
         <p style="font-size:clamp(13px,2vw,15px);color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:32px">A modern voting experience built for secure participation, transparent results, and smooth access across mobile and desktop.</p>
-        <button onclick="showPage('polls')" style="padding:13px 32px;background:#fff;color:#02020a;border:none;border-radius:9px;font-size:15px;font-weight:700;cursor:pointer">Start Voting</button>
+        <button onclick="showPage('polls')" style="padding:13px 32px;background:#fff;color:#0A0704;border:none;border-radius:9px;font-size:15px;font-weight:700;cursor:pointer">Start Voting</button>
       </div>
     </div>
   </div>
@@ -335,6 +338,7 @@ footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
   </div>
 </div>
 
+<!-- POLLS -->
 <div class="page" id="page-polls">
   <div class="page-header">
     <div><h2>Active Polls</h2><p id="polls-count">Loading categories...</p></div>
@@ -343,6 +347,7 @@ footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
   <div class="polls-grid" id="polls-grid"></div>
 </div>
 
+<!-- VOTE -->
 <div class="page" id="page-vote">
   <div class="vote-inner">
     <button class="back-btn" onclick="showPage('polls')"><i class="ti ti-arrow-left" aria-hidden="true"></i> Back to polls</button>
@@ -362,6 +367,7 @@ footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
   </div>
 </div>
 
+<!-- CART -->
 <div class="page" id="page-cart">
   <div class="cart-inner">
     <div class="cart-box">
@@ -378,6 +384,7 @@ footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
   </div>
 </div>
 
+<!-- RECEIPT -->
 <div class="page" id="page-receipt">
   <div class="vote-inner">
     <div class="vote-box" style="text-align:center">
@@ -394,6 +401,7 @@ footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
   </div>
 </div>
 
+<!-- RESULTS -->
 <div class="page" id="page-results">
   <div class="results-inner">
     <div class="page-header" style="max-width:680px; display:flex; justify-content:space-between; align-items:center;">
@@ -404,6 +412,7 @@ footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
   </div>
 </div>
 
+<!-- ADMIN LOGIN -->
 <div class="page" id="page-admin-login">
   <div class="login-wrap">
     <div class="login-split">
@@ -453,6 +462,7 @@ footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
   </div>
 </div>
 
+<!-- ADMIN PANEL -->
 <div class="page" id="page-admin">
   <div class="admin-inner">
     <div class="admin-topbar">
@@ -506,6 +516,7 @@ footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
   </div>
 </div>
 
+<!-- ADMIN LOGS -->
 <div class="page" id="page-admin-logs">
   <div class="admin-inner">
     <div class="admin-topbar">
@@ -516,6 +527,7 @@ footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
   </div>
 </div>
 
+<!-- MANAGE ADMINS -->
 <div class="page" id="page-admin-team">
   <div class="admin-inner">
     <div class="admin-topbar">
@@ -537,6 +549,7 @@ footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
   </div>
 </div>
 
+<!-- TRANSACTIONS -->
 <div class="page" id="page-admin-transactions">
   <div class="admin-inner">
     <div class="admin-topbar">
@@ -1193,13 +1206,13 @@ function downloadResultsPDF() {
     head: head,
     body: body,
     theme: 'grid',
-    headStyles: { fillColor: [37, 99, 235] }, // Matches your var(--pu) color #2563eb
+    headStyles: { fillColor: [212, 175, 55] }, // Gold Theme #D4AF37
     
     // Check every row; if column 3 says 'WINNER', highlight it!
     didParseCell: function (data) {
       if (data.section === 'body' && data.row.raw[3] === 'WINNER') {
-        data.cell.styles.fillColor = [239, 246, 255]; // Matches your var(--pu-light) #eff6ff
-        data.cell.styles.textColor = [29, 78, 216];   // Matches your var(--pu-dark) #1d4ed8
+        data.cell.styles.fillColor = [253, 248, 231]; // Light gold background #FDF8E7
+        data.cell.styles.textColor = [139, 101, 8];   // Dark gold text #8B6508
         data.cell.styles.fontStyle = 'bold';
       }
     }
