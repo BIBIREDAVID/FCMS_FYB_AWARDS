@@ -1,8 +1,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mavericks FYB Awards</title>
-  <link rel="icon" type="image/jpeg" href="https://i.imgur.com/fZsGE4F.jpeg" />
+  <title>Cosa Mavericks FYB Owanbe</title>
+  <link rel="icon" type="image/jpeg" href="https://i.imgur.com/abxrlze.jpeg" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -262,14 +262,14 @@ footer{background:#0A0704;color:#CFC4B1;padding:32px 20px 20px;margin-top:auto}
 }
 </style>
 
-<h2 class="sr-only">Mavericks FYB Awards Voting Platform</h2>
+<h2 class="sr-only">Cosa Mavericks FYB Owanbe Voting Platform</h2>
 <div class="toast" id="toast"></div>
 
 <div class="main">
 <nav>
   <div class="nav-logo" onclick="showPage('home')" style="cursor:pointer">
     <div class="logo-mark" id="nav-logo-mark">MA</div>
-    <span>Mavericks FYB Awards</span>
+    <span>Cosa Mavericks FYB Owanbe</span>
   </div>
   <div class="nav-right">
     <button class="nav-btn" id="nb-home" onclick="showPage('home')"><i class="ti ti-home" aria-hidden="true"></i><span>Home</span></button>
@@ -303,7 +303,7 @@ footer{background:#0A0704;color:#CFC4B1;padding:32px 20px 20px;margin-top:auto}
   <div style="background:linear-gradient(135deg,#0A0704 0%,#140E08 50%,#2A1F13 100%);min-height:70vh;display:flex;align-items:center;padding:60px 40px;margin:-20px -16px 0;overflow:hidden">
     <div style="max-width:1100px;margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap">
       <div style="flex:1;display:flex;align-items:center;justify-content:center;min-width:200px">
-        <img src="https://i.imgur.com/fZsGE4F.jpeg" alt="Mavericks Logo" style="width:clamp(150px,30vw,320px);height:clamp(150px,30vw,320px);object-fit:contain;filter:drop-shadow(0 8px 40px rgba(212,175,55,0.4))" />
+        <img src="https://i.imgur.com/abxrlze.jpeg" alt="Cosa Mavericks Logo" style="width:clamp(150px,30vw,320px);height:clamp(150px,30vw,320px);object-fit:contain;filter:drop-shadow(0 8px 40px rgba(212,175,55,0.4))" />
       </div>
       <div style="flex:2;min-width:240px">
         <h1 style="font-size:clamp(24px,5vw,48px);font-weight:800;color:#fff;line-height:1.2;margin-bottom:16px">Vote with confidence.</h1>
@@ -418,7 +418,7 @@ footer{background:#0A0704;color:#CFC4B1;padding:32px 20px 20px;margin-top:auto}
     <div class="login-split">
       <div class="login-left">
         <div>
-          <div class="login-left-logo"><div class="lmark" id="login-logo-mark">MA</div><span>MAVERICKS FYB AWARDS</span></div>
+          <div class="login-left-logo"><div class="lmark" id="login-logo-mark">MA</div><span>COSA MAVERICKS FYB OWANBE</span></div>
           <h2>Welcome back</h2>
           <p>Sign in to manage polls, nominees, results, and platform settings from one secure dashboard.</p>
         </div>
@@ -566,8 +566,8 @@ footer{background:#0A0704;color:#CFC4B1;padding:32px 20px 20px;margin-top:auto}
     <div class="footer-top">
       <div class="footer-brand">
         <div class="logo-mark-f" id="footer-logo-mark">MA</div>
-        <h3>Mavericks FYB Awards</h3>
-        <p>The official voting platform for the Mavericks FYB Awards. Cast your votes and celebrate excellence.</p>
+        <h3>Cosa Mavericks FYB Owanbe</h3>
+        <p>The official voting platform for the Cosa Mavericks FYB Owanbe. Cast your votes and celebrate excellence.</p>
       </div>
       <div class="footer-col">
         <h4>Navigate</h4>
@@ -583,7 +583,7 @@ footer{background:#0A0704;color:#CFC4B1;padding:32px 20px 20px;margin-top:auto}
     </div>
     <div class="footer-bottom">
       <span class="footer-copy">© 2026 E-VOTING</span>
-      <span class="footer-credit">Built by <a href="https://wa.me/2347015791813?text=Hello,%20I%20am%20contacting%20you%20from%20the%20Mavericks%20FYB%20Awards%20Voting%20Website">BIBIRESANMI DAVID (BIBIREDAVID)</a></span>
+      <span class="footer-credit">Built by <a href="https://wa.me/2347015791813?text=Hello,%20I%20am%20contacting%20you%20from%20the%20Cosa%20Mavericks%20FYB%20Owanbe%20Voting%20Website">BIBIRESANMI DAVID (BIBIREDAVID)</a></span>
     </div>
   </div>
 </footer>
@@ -657,7 +657,7 @@ async function loadConfig(){
     ['nav-logo-mark','login-logo-mark','footer-logo-mark'].forEach(id=>{
       const slot=document.getElementById(id);
       if(!slot) return;
-      slot.innerHTML=logoUrl?`<img src="${logoUrl}" alt="Mavericks logo" />`:'MA';
+      slot.innerHTML=logoUrl?`<img src="${logoUrl}" alt="Cosa Mavericks logo" />`:'MA';
     });
   }catch(e){ console.warn(e); }
 }
@@ -1150,7 +1150,7 @@ function exportCSV(){
   });
   const blob=new Blob([csv],{type:'text/csv'});
   const url=URL.createObjectURL(blob);
-  const a=document.createElement('a'); a.href=url; a.download='mavericks_fyb_results.csv'; a.click();
+  const a=document.createElement('a'); a.href=url; a.download='cosa_mavericks_fyb_owanbe_results.csv'; a.click();
   URL.revokeObjectURL(url); toast('CSV exported.');
 }
 
@@ -1158,7 +1158,7 @@ function exportJSON(){
   if(!categories.length){toast('No data to export.');return;}
   const data=categories.map(cat=>({name:cat.name,price:cat.price,open:cat.open,nominees:cat.nominees.map(n=>({name:n,votes:(voteRecords[cat.name]||{})[n]||0}))}));
   const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
-  const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='mavericks_fyb_data.json'; a.click();
+  const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='cosa_mavericks_fyb_owanbe_data.json'; a.click();
   URL.revokeObjectURL(url); toast('JSON exported.');
 }
 
@@ -1171,7 +1171,7 @@ function downloadResultsPDF() {
 
   // 2. Add Title & Timestamp
   doc.setFontSize(18);
-  doc.text("Mavericks FYB Awards - Official Results", 14, 20);
+  doc.text("Cosa Mavericks FYB Owanbe - Official Results", 14, 20);
   doc.setFontSize(11);
   doc.text("Generated on: " + new Date().toLocaleString(), 14, 28);
 
@@ -1219,7 +1219,7 @@ function downloadResultsPDF() {
   });
 
   // 5. Trigger download
-  doc.save('Mavericks_FYB_Awards_Results.pdf');
+  doc.save('Cosa_Mavericks_FYB_Owanbe_Results.pdf');
   toast('PDF exported.');
 }
 
@@ -1337,8 +1337,9 @@ function initiatePayment(){
       onSuccess:async(ref)=>{
         try{
           toast('Verifying payment...');
+          const actualRef = typeof ref === 'object' ? (ref.transaction_ref || ref.reference) : ref;
           const payload={
-            reference:ref, email, customerName:'',
+            reference:actualRef, email, customerName:'',
             cart:cart.map(item=>({
               categoryId:item.categoryId, category:item.category,
               votes:item.votes.map(([name,votes])=>({name,votes}))
@@ -1346,7 +1347,7 @@ function initiatePayment(){
           };
           const result=await apiRequest('/payments/verify',{method:'POST',body:JSON.stringify(payload)});
           const receiptItems=result.data?.items||[];
-          const transactionRef=result.data?.transactionRef||ref;
+          const transactionRef=result.data?.transactionRef||actualRef;
           cart=[]; updateCartBadge(); await loadPublicState(); renderPolls();
           renderReceipt(receiptItems,transactionRef,email);
           showPage('receipt'); toast('Payment verified and votes recorded!');
