@@ -11,23 +11,23 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --pu:#6c3fc5;--pu-dark:#4a2a8a;--pu-light:#ede8fa;--pu-mid:#8b5cf6;
-  --bg:#f7f5ff;--surface:#fff;--surface-alt:#f7f5ff;--border:#e5dff7;
-  --border-soft:#f0ebfa;--border-mid:#ede8fa;--border-avatar:#d4c5f5;
-  --text:#1a0a3c;--text-muted:#8b79ad;--text-faint:#a090c8;--text-nav:#5a4a7a;
-  --toast-bg:#1a0a3c;--vote-now-bg:#1a0a3c;--vote-now-hover:#2d1666;
-  --input-bg:#fff;--bar-bg:#f0ebfa;--stat-bg:#f7f5ff;--cat-body-bg:#f7f5ff;
-  --closed-bg:#faeeda;--closed-color:#854f0b;--winner-bg:#ede8fa;--winner-color:#4a2a8a;
+  --pu:#2563eb;--pu-dark:#1d4ed8;--pu-light:#eff6ff;--pu-mid:#3b82f6;
+  --bg:#f8fafc;--surface:#fff;--surface-alt:#f8fafc;--border:#e2e8f0;
+  --border-soft:#f1f5f9;--border-mid:#e2e8f0;--border-avatar:#bfdbfe;
+  --text:#0f172a;--text-muted:#64748b;--text-faint:#94a3b8;--text-nav:#475569;
+  --toast-bg:#0f172a;--vote-now-bg:#0f172a;--vote-now-hover:#1e293b;
+  --input-bg:#fff;--bar-bg:#f1f5f9;--stat-bg:#f8fafc;--cat-body-bg:#f8fafc;
+  --closed-bg:#fef3c7;--closed-color:#92400e;--winner-bg:#eff6ff;--winner-color:#1e40af;
 }
 @media(prefers-color-scheme:dark){
   :root{
-    --bg:#0e0820;--surface:#1a1030;--surface-alt:#130d27;--border:#2e2050;
-    --border-soft:#251840;--border-mid:#2e2050;--border-avatar:#3d2a70;
-    --text:#e8e0ff;--text-muted:#9a8bc0;--text-faint:#7a6baa;--text-nav:#b8a8e0;
-    --toast-bg:#2d1f55;--vote-now-bg:#3d2a70;--vote-now-hover:#4a3380;
-    --input-bg:#1a1030;--bar-bg:#251840;--stat-bg:#130d27;--cat-body-bg:#130d27;
-    --pu-light:#2d1f55;--closed-bg:#3a2500;--closed-color:#ffb347;
-    --winner-bg:#2d1f55;--winner-color:#c4a8ff;
+    --bg:#040414;--surface:#0b0b24;--surface-alt:#07071a;--border:#1e1e40;
+    --border-soft:#151530;--border-mid:#1e1e40;--border-avatar:#2a2a5a;
+    --text:#f1f5f9;--text-muted:#94a3b8;--text-faint:#64748b;--text-nav:#cbd5e1;
+    --toast-bg:#1e1e40;--vote-now-bg:#2563eb;--vote-now-hover:#1d4ed8;
+    --input-bg:#0b0b24;--bar-bg:#151530;--stat-bg:#07071a;--cat-body-bg:#07071a;
+    --pu-light:#151530;--closed-bg:#451a03;--closed-color:#fcd34d;
+    --winner-bg:#151530;--winner-color:#93c5fd;
   }
 }
 body{font-family:'Inter',sans-serif;background:var(--bg);min-height:100vh;display:flex;flex-direction:column;color:var(--text)}
@@ -135,7 +135,7 @@ nav{background:var(--surface);border-bottom:1.5px solid var(--border);padding:0 
 /* ADMIN LOGIN */
 .login-wrap{min-height:calc(100vh - 100px);display:flex;align-items:center;justify-content:center;padding:24px 16px}
 .login-split{display:grid;grid-template-columns:1fr 1fr;max-width:740px;width:100%;border-radius:18px;overflow:hidden;border:1.5px solid var(--border)}
-.login-left{background:linear-gradient(135deg,#1a0a3c,#2d1666);padding:40px 32px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.login-left{background:linear-gradient(135deg,#000000,#10103a);padding:40px 32px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
 .login-left-logo{display:flex;align-items:center;gap:8px;margin-bottom:20px}
 .lmark{width:32px;height:32px;background:var(--pu);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;flex-shrink:0}
 .login-left-logo span{font-size:12px;font-weight:700;color:#fff}
@@ -214,20 +214,20 @@ nav{background:var(--surface);border-bottom:1.5px solid var(--border);padding:0 
 .export-row{display:flex;gap:7px;flex-wrap:wrap}
 
 /* FOOTER */
-footer{background:#1a0a3c;color:#c4b5f5;padding:32px 20px 20px;margin-top:auto}
+footer{background:#02020a;color:#cbd5e1;padding:32px 20px 20px;margin-top:auto}
 .footer-inner{max-width:1100px;margin:0 auto}
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;margin-bottom:24px}
 .footer-brand .logo-mark-f{width:32px;height:32px;background:var(--pu);border-radius:8px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;margin-bottom:8px}
 .footer-brand h3{font-size:14px;font-weight:700;color:#fff;margin-bottom:6px}
-.footer-brand p{font-size:11px;line-height:1.7;color:#a090c8;max-width:220px}
+.footer-brand p{font-size:11px;line-height:1.7;color:#94a3b8;max-width:220px}
 .footer-col h4{font-size:11px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px}
-.footer-col a{display:block;font-size:12px;color:#a090c8;text-decoration:none;margin-bottom:6px;cursor:pointer;transition:color 0.15s}
+.footer-col a{display:block;font-size:12px;color:#94a3b8;text-decoration:none;margin-bottom:6px;cursor:pointer;transition:color 0.15s}
 .footer-col a:hover{color:#fff}
-.footer-bottom{border-top:1px solid #2e1a5c;padding-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
-.footer-copy{font-size:11px;color:#6b5a9a}
-.footer-credit{font-size:11px;color:#6b5a9a}
-.footer-credit a{color:#a090c8;text-decoration:none}
-.footer-credit a:hover{color:#fff}
+.footer-bottom{border-top:1px solid #1e1e40;padding-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.footer-copy{font-size:11px;color:#64748b}
+.footer-credit{font-size:11px;color:#64748b}
+.footer-credit a{color:#94a3b8;text-decoration:none}
+.footer-credit a:hover{color:#f1f5f9}
 
 /* RESPONSIVE */
 @media(max-width:580px){
@@ -297,15 +297,15 @@ footer{background:#1a0a3c;color:#c4b5f5;padding:32px 20px 20px;margin-top:auto}
 </nav>
 
 <div class="page" id="page-home">
-  <div style="background:linear-gradient(135deg,#0a0520 0%,#1a0a3c 50%,#2d1666 100%);min-height:70vh;display:flex;align-items:center;padding:60px 40px;margin:-20px -16px 0;overflow:hidden">
+  <div style="background:linear-gradient(135deg,#000000 0%,#080820 50%,#10103a 100%);min-height:70vh;display:flex;align-items:center;padding:60px 40px;margin:-20px -16px 0;overflow:hidden">
     <div style="max-width:1100px;margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap">
       <div style="flex:1;display:flex;align-items:center;justify-content:center;min-width:200px">
-        <img src="https://i.imgur.com/fZsGE4F.jpeg" alt="Mavericks Logo" style="width:clamp(150px,30vw,320px);height:clamp(150px,30vw,320px);object-fit:contain;filter:drop-shadow(0 8px 40px rgba(108,63,197,0.5))" />
+        <img src="https://i.imgur.com/fZsGE4F.jpeg" alt="Mavericks Logo" style="width:clamp(150px,30vw,320px);height:clamp(150px,30vw,320px);object-fit:contain;filter:drop-shadow(0 8px 40px rgba(37,99,235,0.4))" />
       </div>
       <div style="flex:2;min-width:240px">
         <h1 style="font-size:clamp(24px,5vw,48px);font-weight:800;color:#fff;line-height:1.2;margin-bottom:16px">Vote with confidence.</h1>
         <p style="font-size:clamp(13px,2vw,15px);color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:32px">A modern voting experience built for secure participation, transparent results, and smooth access across mobile and desktop.</p>
-        <button onclick="showPage('polls')" style="padding:13px 32px;background:#fff;color:#1a0a3c;border:none;border-radius:9px;font-size:15px;font-weight:700;cursor:pointer">Start Voting</button>
+        <button onclick="showPage('polls')" style="padding:13px 32px;background:#fff;color:#02020a;border:none;border-radius:9px;font-size:15px;font-weight:700;cursor:pointer">Start Voting</button>
       </div>
     </div>
   </div>
@@ -1193,13 +1193,13 @@ function downloadResultsPDF() {
     head: head,
     body: body,
     theme: 'grid',
-    headStyles: { fillColor: [108, 63, 197] }, // Matches your var(--pu) color
+    headStyles: { fillColor: [37, 99, 235] }, // Matches your var(--pu) color #2563eb
     
     // Check every row; if column 3 says 'WINNER', highlight it!
     didParseCell: function (data) {
       if (data.section === 'body' && data.row.raw[3] === 'WINNER') {
-        data.cell.styles.fillColor = [237, 232, 250]; // Matches your var(--pu-light)
-        data.cell.styles.textColor = [74, 42, 138];   // Matches your var(--pu-dark)
+        data.cell.styles.fillColor = [239, 246, 255]; // Matches your var(--pu-light) #eff6ff
+        data.cell.styles.textColor = [29, 78, 216];   // Matches your var(--pu-dark) #1d4ed8
         data.cell.styles.fontStyle = 'bold';
       }
     }
