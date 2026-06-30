@@ -1,7 +1,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cosa Mavericks FYB Owanbe</title>
+  <title>Cosa Mavericks FYB Owambe</title>
   <link rel="icon" type="image/jpeg" href="https://i.imgur.com/abxrlze.jpeg" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -262,14 +262,14 @@ footer{background:#0A0704;color:#CFC4B1;padding:32px 20px 20px;margin-top:auto}
 }
 </style>
 
-<h2 class="sr-only">Cosa Mavericks FYB Owanbe Voting Platform</h2>
+<h2 class="sr-only">Cosa Mavericks FYB Owambe Voting Platform</h2>
 <div class="toast" id="toast"></div>
 
 <div class="main">
 <nav>
   <div class="nav-logo" onclick="showPage('home')" style="cursor:pointer">
     <div class="logo-mark" id="nav-logo-mark">MA</div>
-    <span>Cosa Mavericks FYB Owanbe</span>
+    <span>Cosa Mavericks FYB Owambe</span>
   </div>
   <div class="nav-right">
     <button class="nav-btn" id="nb-home" onclick="showPage('home')"><i class="ti ti-home" aria-hidden="true"></i><span>Home</span></button>
@@ -418,7 +418,7 @@ footer{background:#0A0704;color:#CFC4B1;padding:32px 20px 20px;margin-top:auto}
     <div class="login-split">
       <div class="login-left">
         <div>
-          <div class="login-left-logo"><div class="lmark" id="login-logo-mark">MA</div><span>COSA MAVERICKS FYB OWANBE</span></div>
+          <div class="login-left-logo"><div class="lmark" id="login-logo-mark">MA</div><span>COSA MAVERICKS FYB OWAMBE</span></div>
           <h2>Welcome back</h2>
           <p>Sign in to manage polls, nominees, results, and platform settings from one secure dashboard.</p>
         </div>
@@ -566,8 +566,8 @@ footer{background:#0A0704;color:#CFC4B1;padding:32px 20px 20px;margin-top:auto}
     <div class="footer-top">
       <div class="footer-brand">
         <div class="logo-mark-f" id="footer-logo-mark">MA</div>
-        <h3>Cosa Mavericks FYB Owanbe</h3>
-        <p>The official voting platform for the Cosa Mavericks FYB Owanbe. Cast your votes and celebrate excellence.</p>
+        <h3>Cosa Mavericks FYB Owambe</h3>
+        <p>The official voting platform for the Cosa Mavericks FYB Owambe. Cast your votes and celebrate excellence.</p>
       </div>
       <div class="footer-col">
         <h4>Navigate</h4>
@@ -583,7 +583,7 @@ footer{background:#0A0704;color:#CFC4B1;padding:32px 20px 20px;margin-top:auto}
     </div>
     <div class="footer-bottom">
       <span class="footer-copy">© 2026 E-VOTING</span>
-      <span class="footer-credit">Built by <a href="https://wa.me/2347015791813?text=Hello,%20I%20am%20contacting%20you%20from%20the%20Cosa%20Mavericks%20FYB%20Owanbe%20Voting%20Website">BIBIRESANMI DAVID (BIBIREDAVID)</a></span>
+      <span class="footer-credit">Built by <a href="https://wa.me/2347015791813?text=Hello,%20I%20am%20contacting%20you%20from%20the%20Cosa%20Mavericks%20FYB%20Owambe%20Voting%20Website">BIBIRESANMI DAVID (BIBIREDAVID)</a></span>
     </div>
   </div>
 </footer>
@@ -1150,7 +1150,7 @@ function exportCSV(){
   });
   const blob=new Blob([csv],{type:'text/csv'});
   const url=URL.createObjectURL(blob);
-  const a=document.createElement('a'); a.href=url; a.download='cosa_mavericks_fyb_owanbe_results.csv'; a.click();
+  const a=document.createElement('a'); a.href=url; a.download='cosa_mavericks_fyb_owambe_results.csv'; a.click();
   URL.revokeObjectURL(url); toast('CSV exported.');
 }
 
@@ -1158,7 +1158,7 @@ function exportJSON(){
   if(!categories.length){toast('No data to export.');return;}
   const data=categories.map(cat=>({name:cat.name,price:cat.price,open:cat.open,nominees:cat.nominees.map(n=>({name:n,votes:(voteRecords[cat.name]||{})[n]||0}))}));
   const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
-  const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='cosa_mavericks_fyb_owanbe_data.json'; a.click();
+  const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='cosa_mavericks_fyb_owambe_data.json'; a.click();
   URL.revokeObjectURL(url); toast('JSON exported.');
 }
 
@@ -1171,7 +1171,7 @@ function downloadResultsPDF() {
 
   // 2. Add Title & Timestamp
   doc.setFontSize(18);
-  doc.text("Cosa Mavericks FYB Owanbe - Official Results", 14, 20);
+  doc.text("Cosa Mavericks FYB Owambe - Official Results", 14, 20);
   doc.setFontSize(11);
   doc.text("Generated on: " + new Date().toLocaleString(), 14, 28);
 
@@ -1219,7 +1219,7 @@ function downloadResultsPDF() {
   });
 
   // 5. Trigger download
-  doc.save('Cosa_Mavericks_FYB_Owanbe_Results.pdf');
+  doc.save('Cosa_Mavericks_FYB_Owambe_Results.pdf');
   toast('PDF exported.');
 }
 
